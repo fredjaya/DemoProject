@@ -92,6 +92,12 @@ def demo_log(infile, outpath, achoice, names, overwrite, verbose, ensembl_accoun
 
 
 def _parse_csv_arg(*args):
+    """
+    >>> _parse_csv_arg("test")
+    ['test']
+    >>> _parse_csv_arg("test")
+    ['fail']
+    """
     return args[-1].split(",")
 
 
