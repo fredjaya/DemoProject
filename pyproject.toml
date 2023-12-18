@@ -52,7 +52,7 @@ dev = [
 
 [tool.pytest.ini_options]
 addopts = ["--strict-config", "--doctest-modules"]
-testpaths = "tests"
+testpaths = ["tests", "src/myproject"]
 
 [tool.black]
 line-length = 88
